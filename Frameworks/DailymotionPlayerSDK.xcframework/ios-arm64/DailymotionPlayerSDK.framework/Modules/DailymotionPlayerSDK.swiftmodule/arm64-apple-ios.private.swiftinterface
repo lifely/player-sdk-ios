@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DailymotionPlayerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -32,7 +32,6 @@ import os
 }
 public struct DMPlayerParameters : Swift.Codable {
   public var customConfig: Swift.String?
-  public var syndicationKey: Swift.String?
   public var scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode
   public var mute: Swift.Bool
   public var startTime: Foundation.TimeInterval?
@@ -75,8 +74,8 @@ extension DailymotionPlayerSDK.DMPlayerParameters : Swift.CustomStringConvertibl
   @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, isInProgress progressTime: Swift.Double)
   @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didReceiveQualitiesList qualities: [Swift.String])
   @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didChangeQuality quality: Swift.String)
-  @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didSeek time: Swift.Double)
-  @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, isSeeking time: Swift.Double)
+  @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didSeekEnd time: Swift.Double)
+  @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didSeekStart time: Swift.Double)
   @objc optional func videoDidStart(_ player: DailymotionPlayerSDK.DMPlayerView)
   @objc optional func video(_ player: DailymotionPlayerSDK.DMPlayerView, didChangeTime time: Swift.Double)
   @objc optional func videoIsBuffering(_ player: DailymotionPlayerSDK.DMPlayerView)
