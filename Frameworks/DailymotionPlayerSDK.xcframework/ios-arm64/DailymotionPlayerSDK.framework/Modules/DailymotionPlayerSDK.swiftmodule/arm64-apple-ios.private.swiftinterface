@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DailymotionPlayerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -11,6 +11,7 @@ import Combine
 import Foundation
 import GoogleInteractiveMediaAds
 import OMSDK_Dailymotion
+import StoreKit
 import Swift
 import UIKit
 import WebKit
@@ -31,13 +32,13 @@ import os
   @objc optional func adDidClick(_ player: DailymotionPlayerSDK.DMPlayerView)
 }
 public struct DMPlayerParameters : Swift.Codable {
-  public var customConfig: Swift.String?
+  public var customConfig: [Swift.String : Swift.String]?
   public var scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode
   public var mute: Swift.Bool
   public var startTime: Foundation.TimeInterval?
   public var loop: Swift.Bool
   public var allowIDFA: Swift.Bool
-  public init(customConfig: Swift.String? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true)
+  public init(customConfig: [Swift.String : Swift.String]? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true)
   public enum ScaleMode : Swift.String, Swift.CaseIterable, Swift.Codable {
     case fit
     case fill
@@ -157,7 +158,7 @@ public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?)
   @_Concurrency.MainActor(unsafe) public func setControls(visible: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setFullscreen(fullscreen: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setMute(mute: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func setCustomConfig(config: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setCustomConfig(config: [Swift.String : Swift.String])
   @_Concurrency.MainActor(unsafe) public func setScaleMode(scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode)
   @_Concurrency.MainActor(unsafe) public func getState(completion: @escaping DailymotionPlayerSDK.StateCompletionHandler)
   @_Concurrency.MainActor(unsafe) public func updateParams(params: DailymotionPlayerSDK.DMPlayerParameters)
