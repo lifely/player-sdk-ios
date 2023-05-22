@@ -1,5 +1,5 @@
 
-# Dailymotion Native iOS SDK
+# Dailymotion Native iOS SDK Pre-release
 
 <p float="left">
   <img src="https://corpostatic.dailymotion.com/corporate-cms-upload-assets-prod/uploads/sites/150001/2022/02/dailymotion.svg" width="500" />
@@ -8,7 +8,7 @@
 
 
 ## Full SDK Documentation
- [https://developers.dailymotion.com/player/#embed-mobile-ios](https://developers.dailymotion.com/player/#embed-mobile-ios)
+ [https://developers.dailymotion.com/native-ios-sdk-pre-release/](https://developers.dailymotion.com/native-ios-sdk-pre-release/)
 
 ## Sample Apps
 [https://github.com/dailymotion/player-sdk-ios-samples/](https://github.com/dailymotion/player-sdk-ios-samples/)

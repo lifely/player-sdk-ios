@@ -41,7 +41,8 @@ public struct DMPlayerParameters : Swift.Codable {
   public var startTime: Foundation.TimeInterval?
   public var loop: Swift.Bool
   public var allowIDFA: Swift.Bool
-  public init(customConfig: [Swift.String : Swift.String]? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true)
+  public var allowPIP: Swift.Bool
+  public init(customConfig: [Swift.String : Swift.String]? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true, allowPIP: Swift.Bool = true)
   public enum ScaleMode : Swift.String, Swift.CaseIterable, Swift.Codable {
     case fit
     case fill
