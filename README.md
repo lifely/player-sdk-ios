@@ -1,5 +1,5 @@
 
-# Dailymotion Native iOS SDK Pre-release
+# Dailymotion Native iOS SDK
 
 <p float="left">
   <img src="https://corpostatic.dailymotion.com/corporate-cms-upload-assets-prod/uploads/sites/150001/2022/02/dailymotion.svg" width="500" />
