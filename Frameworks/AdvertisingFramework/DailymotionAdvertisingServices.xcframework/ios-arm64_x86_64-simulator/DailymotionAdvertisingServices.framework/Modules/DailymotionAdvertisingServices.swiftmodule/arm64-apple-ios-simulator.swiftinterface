@@ -41,6 +41,7 @@ import os
 }
 @objc public protocol IMADelegate {
   @objc func imaEvent(event: Swift.String)
+  @objc func imaLocalEvent(event: Swift.String)
   @objc func viewControllerForAds() -> UIKit.UIViewController?
   @objc func toggleFullscreen()
 }

@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)toggleFullscreen;
 - (UIViewController * _Nullable)viewControllerForAds;
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
+- (void)imaLocalEventWithEvent:(NSString * _Nonnull)event;
  
 @end
 

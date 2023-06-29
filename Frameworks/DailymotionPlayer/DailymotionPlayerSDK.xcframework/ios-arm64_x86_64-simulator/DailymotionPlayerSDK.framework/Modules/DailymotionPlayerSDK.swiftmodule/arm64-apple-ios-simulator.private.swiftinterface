@@ -176,7 +176,6 @@ public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?)
   @_Concurrency.MainActor(unsafe) public func setSubtitles(code: Swift.String)
   @_Concurrency.MainActor(unsafe) public func setQuality(level: Swift.String)
   @_Concurrency.MainActor(unsafe) public func seek(to: Foundation.TimeInterval)
-  @_Concurrency.MainActor(unsafe) public func setControls(visible: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setFullscreen(fullscreen: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setMute(mute: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setCustomConfig(config: [Swift.String : Swift.String])
@@ -220,7 +219,6 @@ public struct DMPlayerState : Swift.Codable {
   public var playerPresentationMode: Swift.String?
   public var playerScaleMode: Swift.String?
   public var videoIsCreatedForKids: Swift.Bool?
-  public var playerAreControlsEnabled: Swift.Bool?
   public var playerIsMuted: Swift.Bool?
   public var playerIsPlaying: Swift.Bool?
   public var playerIsBuffering: Swift.Bool?

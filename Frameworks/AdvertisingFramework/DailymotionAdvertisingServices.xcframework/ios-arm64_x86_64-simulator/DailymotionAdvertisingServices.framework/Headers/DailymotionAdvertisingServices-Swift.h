@@ -289,6 +289,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP30DailymotionAdvertisingServices11IMADelegate_")
 @protocol IMADelegate
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
+- (void)imaLocalEventWithEvent:(NSString * _Nonnull)event;
 - (UIViewController * _Nullable)viewControllerForAds SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleFullscreen;
 @end
@@ -612,6 +613,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP30DailymotionAdvertisingServices11IMADelegate_")
 @protocol IMADelegate
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
+- (void)imaLocalEventWithEvent:(NSString * _Nonnull)event;
 - (UIViewController * _Nullable)viewControllerForAds SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleFullscreen;
 @end
