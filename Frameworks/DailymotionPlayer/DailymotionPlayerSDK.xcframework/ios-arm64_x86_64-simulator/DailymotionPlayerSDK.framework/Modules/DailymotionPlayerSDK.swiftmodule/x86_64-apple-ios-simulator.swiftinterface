@@ -42,7 +42,8 @@ public struct DMPlayerParameters : Swift.Codable {
   public var loop: Swift.Bool
   public var allowIDFA: Swift.Bool
   public var allowPIP: Swift.Bool
-  public init(customConfig: [Swift.String : Swift.String]? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true, allowPIP: Swift.Bool = true)
+  public var defaultFullscreenOrientation: DailymotionPlayerSDK.DMPlayerFullscreenOrientation
+  public init(customConfig: [Swift.String : Swift.String]? = nil, syndicationKey: Swift.String? = nil, scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode = .fit, mute: Swift.Bool = false, startTime: Foundation.TimeInterval = 0, loop: Swift.Bool = false, allowIDFA: Swift.Bool = true, allowPIP: Swift.Bool = true, defaultFullscreenOrientation: DailymotionPlayerSDK.DMPlayerFullscreenOrientation = .landscapeLeft)
   public enum ScaleMode : Swift.String, Swift.CaseIterable, Swift.Codable {
     case fit
     case fill
@@ -150,6 +151,19 @@ public struct LogLevel : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didChangeScaleMode scaleMode: Swift.String)
 }
 public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?) -> Swift.Void)
+public enum DMPlayerFullscreenOrientation : Swift.Codable {
+  case landscapeRight
+  case landscapeLeft
+  case portrait
+  case upsidedown
+  public static func == (a: DailymotionPlayerSDK.DMPlayerFullscreenOrientation, b: DailymotionPlayerSDK.DMPlayerFullscreenOrientation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class DMPlayerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var isFullscreen: Swift.Bool
   @_Concurrency.MainActor(unsafe) weak public var playerDelegate: DailymotionPlayerSDK.DMPlayerDelegate? {
@@ -176,7 +190,7 @@ public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?)
   @_Concurrency.MainActor(unsafe) public func setSubtitles(code: Swift.String)
   @_Concurrency.MainActor(unsafe) public func setQuality(level: Swift.String)
   @_Concurrency.MainActor(unsafe) public func seek(to: Foundation.TimeInterval)
-  @_Concurrency.MainActor(unsafe) public func setFullscreen(fullscreen: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setFullscreen(fullscreen: Swift.Bool, orientation: DailymotionPlayerSDK.DMPlayerFullscreenOrientation? = nil)
   @_Concurrency.MainActor(unsafe) public func setMute(mute: Swift.Bool)
   @_Concurrency.MainActor(unsafe) public func setCustomConfig(config: [Swift.String : Swift.String])
   @_Concurrency.MainActor(unsafe) public func setScaleMode(scaleMode: DailymotionPlayerSDK.DMPlayerParameters.ScaleMode)
@@ -306,6 +320,8 @@ public let Dailymotion: DailymotionPlayerSDK.DailymotionPlayer
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.Equatable {}
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.Hashable {}
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.RawRepresentable {}
+extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.Equatable {}
+extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.Hashable {}
 extension DailymotionPlayerSDK.DMPlayerView.PresentationMode : Swift.Equatable {}
 extension DailymotionPlayerSDK.DMPlayerView.PresentationMode : Swift.Hashable {}
 extension DailymotionPlayerSDK.DMPlayerView.PresentationMode : Swift.RawRepresentable {}
