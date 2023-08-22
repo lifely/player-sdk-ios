@@ -276,20 +276,22 @@ SWIFT_CLASS("_TtC30DailymotionAdvertisingServices12IMAAdManager")
 @interface IMAAdManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imaVersion;)
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
-- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails;
+- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
 - (void)imaAdStop;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
-- (void)playPausePressed;
-- (void)mutePressed;
+- (void)togglePlay;
+- (void)toggleMute;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP30DailymotionAdvertisingServices11IMADelegate_")
 @protocol IMADelegate
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
 - (void)imaLocalEventWithEvent:(NSString * _Nonnull)event;
+- (void)imaMuteWithMute:(BOOL)mute;
 - (UIViewController * _Nullable)viewControllerForAds SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleFullscreen;
 @end
@@ -308,7 +310,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 
@@ -600,20 +601,22 @@ SWIFT_CLASS("_TtC30DailymotionAdvertisingServices12IMAAdManager")
 @interface IMAAdManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imaVersion;)
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
-- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails;
+- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
 - (void)imaAdStop;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
-- (void)playPausePressed;
-- (void)mutePressed;
+- (void)togglePlay;
+- (void)toggleMute;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP30DailymotionAdvertisingServices11IMADelegate_")
 @protocol IMADelegate
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
 - (void)imaLocalEventWithEvent:(NSString * _Nonnull)event;
+- (void)imaMuteWithMute:(BOOL)mute;
 - (UIViewController * _Nullable)viewControllerForAds SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleFullscreen;
 @end
@@ -632,7 +635,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 

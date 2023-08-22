@@ -103,7 +103,7 @@
           {
             "kind": "Function",
             "name": "imaAdRequested",
-            "printedName": "imaAdRequested(_:)",
+            "printedName": "imaAdRequested(_:muted:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -128,11 +128,17 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)imaAdRequested:",
-            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC14imaAdRequestedyySDySSypGF",
+            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)imaAdRequested:muted:",
+            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC14imaAdRequested_5mutedySDySSypG_SbtF",
             "moduleName": "DailymotionAdvertisingServices",
             "declAttributes": [
               "AccessControl",
@@ -199,8 +205,8 @@
           },
           {
             "kind": "Function",
-            "name": "playPausePressed",
-            "printedName": "playPausePressed()",
+            "name": "togglePlay",
+            "printedName": "togglePlay()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -209,8 +215,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)playPausePressed",
-            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC16playPausePressedyyF",
+            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)togglePlay",
+            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC10togglePlayyyF",
             "moduleName": "DailymotionAdvertisingServices",
             "declAttributes": [
               "AccessControl",
@@ -220,8 +226,8 @@
           },
           {
             "kind": "Function",
-            "name": "mutePressed",
-            "printedName": "mutePressed()",
+            "name": "toggleMute",
+            "printedName": "toggleMute()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -230,8 +236,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)mutePressed",
-            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC11mutePressedyyF",
+            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)toggleMute",
+            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC10toggleMuteyyF",
             "moduleName": "DailymotionAdvertisingServices",
             "declAttributes": [
               "AccessControl",
@@ -331,6 +337,23 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices"
       },
       {
         "kind": "Import",
@@ -642,6 +665,13 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices"
       },
       {
         "kind": "Import",
@@ -1022,6 +1052,40 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DailymotionAdvertisingServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1207,6 +1271,36 @@
           },
           {
             "kind": "Function",
+            "name": "imaMute",
+            "printedName": "imaMute(mute:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DailymotionAdvertisingServices@objc(pl)IMADelegate(im)imaMuteWithMute:",
+            "mangledName": "$s30DailymotionAdvertisingServices11IMADelegateP7imaMute4muteySb_tF",
+            "moduleName": "DailymotionAdvertisingServices",
+            "genericSig": "<τ_0_0 where τ_0_0 : DailymotionAdvertisingServices.IMADelegate>",
+            "sugared_genericSig": "<Self where Self : DailymotionAdvertisingServices.IMADelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "viewControllerForAds",
             "printedName": "viewControllerForAds()",
             "children": [
@@ -1294,6 +1388,13 @@
       "offset": 315,
       "length": 16,
       "value": "\"IMAAdContainer\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Public\/IMA\/IMAAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1012,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Public\/IMA\/IMAAdManager.swift",
@@ -1472,106 +1573,120 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1287,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 1369,
+      "length": 49,
+      "value": "\"Main transparent with viewability gradient view\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1460,
       "length": 30,
       "value": "\"Ad player pause\/play button.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1532,
       "length": 32,
       "value": "\"Ad player mute\/un-mute button.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1612,
       "length": 37,
       "value": "\"Ad player fullscreen\/inline button.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1694,
       "length": 27,
       "value": "\"Ad number position label.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1631,
+      "offset": 1772,
       "length": 20,
       "value": "\"Ad countdown label\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1700,
+      "offset": 1841,
       "length": 17,
       "value": "\"Ad progress bar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1765,
+      "offset": 1906,
       "length": 26,
       "value": "\"Stack for video controls\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1840,
+      "offset": 1981,
       "length": 26,
       "value": "\"Stack for video controls\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1932,
+      "offset": 2073,
       "length": 18,
       "value": "\"adViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2023,
+      "offset": 2164,
       "length": 16,
       "value": "\"IMAProgressBar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2071,
+      "offset": 2212,
       "length": 15,
       "value": "\"IMAAdPosLabel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2263,
       "length": 19,
       "value": "\"IMACountDownLabel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2319,
       "length": 20,
       "value": "\"IMAPlayPauseButton\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2236,
+      "offset": 2377,
       "length": 15,
       "value": "\"IMAMuteUnMute\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2436,
       "length": 27,
       "value": "\"IMAFullScreenInlineButton\""
     },
@@ -1588,6 +1703,230 @@
       "offset": 321,
       "length": 21,
       "value": "\"DailymotionAdvertisingServices.DMAdvertisingServices\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 345,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 442,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 534,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 762,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 825,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 980,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 985,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 999,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1004,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1017,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1022,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1036,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1082,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1087,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1101,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1119,
+      "length": 4,
+      "value": "13.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1124,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1138,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "Array",
+      "offset": 1216,
+      "length": 10,
+      "value": "[0.0, 1.0]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1878,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2716,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3108,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3169,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3934,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4311,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4326,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4877,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4937,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5259,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5274,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/UI\/AdControlsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5469,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Public\/OMSDK\/OMSDKManager.swift",
@@ -1982,6 +2321,20 @@
       "value": "\"inline\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMASDKEvents\/IMASDKEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 954,
+      "length": 15,
+      "value": "\"ad_timeupdate\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMASDKEvents\/IMASDKEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 1001,
+      "length": 19,
+      "value": "\"ad_durationchange\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/MuteSwitch.swift",
       "kind": "BooleanLiteral",
       "offset": 691,
@@ -2102,43 +2455,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
-      "kind": "FloatLiteral",
-      "offset": 412,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 447,
+      "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 533,
+      "offset": 534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 566,
+      "offset": 567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 841,
       "length": 14,
       "value": "\"outputVolume\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 878,
+      "offset": 879,
       "length": 1,
       "value": "0"
     },

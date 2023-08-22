@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //@protocol AdvertisingBridgeDelegate;
 
 @protocol AdvertisingBridgeDelegate <NSObject>
+- (void)imaMute:(BOOL)mute;
 - (void)toggleFullscreen;
 - (UIViewController * _Nullable)viewControllerForAds;
 - (void)imaEventWithEvent:(NSString * _Nonnull)event;
@@ -32,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString * _Nullable )omidDKVersion;
 
 + (NSString * _Nullable )imaSDKVersion;
-- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull) adRequest;
+- (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull) adRequest muted:(BOOL) muted;
 - (void)imaStop;
 - (void)imaFullScreenViewController:(UIViewController * _Nullable) viewController;
 - (void)imaPlayPause;
