@@ -2009,69 +2009,76 @@
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
       "offset": 319,
-      "length": 7,
-      "value": "\"Error\""
+      "length": 13,
+      "value": "\"Error❗️\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 367,
       "length": 9,
       "value": "\"Default\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 398,
-      "length": 7,
-      "value": "\"DMLog\""
+      "offset": 404,
+      "length": 10,
+      "value": "\"DMLogIMA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 444,
       "length": 10,
       "value": "\"INTERNAL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 482,
+      "length": 10,
+      "value": "\"[%@]: %@\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
       "length": 14,
       "value": "\"[%@][%@]: %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 523,
-      "length": 18,
-      "value": "\"[%@][%@][%@]: %@\""
+      "offset": 681,
+      "length": 38,
+      "value": "\"com.dailymotion.DailymotionPlayerSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 1076,
+      "offset": 1264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 1949,
+      "offset": 2133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 2253,
+      "offset": 2435,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 2561,
+      "offset": 2741,
       "length": 5,
       "value": "false"
     },

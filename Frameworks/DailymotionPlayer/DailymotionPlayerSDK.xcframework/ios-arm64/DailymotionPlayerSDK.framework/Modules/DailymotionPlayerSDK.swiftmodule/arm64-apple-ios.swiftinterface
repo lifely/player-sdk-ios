@@ -164,6 +164,11 @@ public enum DMPlayerFullscreenOrientation : Swift.Codable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
+extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class DMPlayerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var isFullscreen: Swift.Bool
   @_Concurrency.MainActor(unsafe) weak public var playerDelegate: DailymotionPlayerSDK.DMPlayerDelegate? {

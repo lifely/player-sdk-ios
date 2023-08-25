@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vpp8vKmMfZiEMjM8JjDlkbbxY0c=
+		4WlWkmJgaR+hwrel2YwI3XwBQso=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OagpzizT4fa+lCcyGBObOxY30yk=
+		qMWgbGsjrd/h4nkjWsIBB2OrXB4=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vpp8vKmMfZiEMjM8JjDlkbbxY0c=
+		4WlWkmJgaR+hwrel2YwI3XwBQso=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gz+yj9w9eW9cQyf0Xu4R73kXyLY=
+		lFDyuQzkvJ4GprmZAnelquP+Z9o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MFaRSnJrxRBifHEW25VM69fXrZKwZ0FJHXRzQsJPKDw=
+			8DFdBGse9opMJ2jbphmgpa6taigq65gdZ1w88iroczw=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KeyUgm4DZ+DG6dGqvjYDA13ovmO+Hfd5mlV2BlQbhNA=
+			6UaYQUzHoFRUxwZ0E80HOC0+jcSArrLDsIPeZYoYLtA=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MFaRSnJrxRBifHEW25VM69fXrZKwZ0FJHXRzQsJPKDw=
+			8DFdBGse9opMJ2jbphmgpa6taigq65gdZ1w88iroczw=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -169,7 +169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			27d9f3/uP6JtPX2yguR7QAznHB/ajcEfbTc8tzyukq4=
+			tLzwiDi2efYe/emf/Ln8VF7mnDxd6WjAQd/gFK4wGac=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
