@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0Kl84SCM77FMNycvJ5DuyhUgpVo=
+		oCvshwF55hcZA55da3RKVGWYbts=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eS7wNWzFmAsgvCjcqtc9WZ9teTA=
+		Af8DVGRjQQscQOA7knJ1D4sm4jA=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eS7wNWzFmAsgvCjcqtc9WZ9teTA=
+		Af8DVGRjQQscQOA7knJ1D4sm4jA=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HbBLw5r/sEG8kMuDFrWG04NM+geJZboE6cXCJSoYopw=
+			upFmJb4+5YG8fsQi0Ke+3NMxnPaB8N035zjiwuyg0vU=
 			</data>
 		</dict>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -138,7 +138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HbBLw5r/sEG8kMuDFrWG04NM+geJZboE6cXCJSoYopw=
+			upFmJb4+5YG8fsQi0Ke+3NMxnPaB8N035zjiwuyg0vU=
 			</data>
 		</dict>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
