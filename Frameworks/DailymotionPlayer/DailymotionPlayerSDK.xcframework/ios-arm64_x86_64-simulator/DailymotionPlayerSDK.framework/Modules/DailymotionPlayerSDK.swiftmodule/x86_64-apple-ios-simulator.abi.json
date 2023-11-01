@@ -4819,9 +4819,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4832,7 +4840,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@DailymotionPlayerSDK@objc(pl)DMPlayerDelegate(im)playerWillPresentFullscreenViewController:",
-            "mangledName": "$s20DailymotionPlayerSDK16DMPlayerDelegateP41playerWillPresentFullscreenViewControllerySo06UIViewK0CAA0dJ0CF",
+            "mangledName": "$s20DailymotionPlayerSDK16DMPlayerDelegateP41playerWillPresentFullscreenViewControllerySo06UIViewK0CSgAA0dJ0CF",
             "moduleName": "DailymotionPlayerSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DailymotionPlayerSDK.DMPlayerDelegate>",
             "sugared_genericSig": "<Self where Self : DailymotionPlayerSDK.DMPlayerDelegate>",
@@ -5232,6 +5240,70 @@
             "declKind": "Func",
             "usr": "c:@M@DailymotionPlayerSDK@objc(pl)DMPlayerDelegate(im)player:didChangeScaleMode:",
             "mangledName": "$s20DailymotionPlayerSDK16DMPlayerDelegateP6player_18didChangeScaleModeyAA0D4ViewC_SStF",
+            "moduleName": "DailymotionPlayerSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DailymotionPlayerSDK.DMPlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : DailymotionPlayerSDK.DMPlayerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playerDidRequestFullscreen",
+            "printedName": "playerDidRequestFullscreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DMPlayerView",
+                "printedName": "DailymotionPlayerSDK.DMPlayerView",
+                "usr": "c:@M@DailymotionPlayerSDK@objc(cs)DMPlayerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DailymotionPlayerSDK@objc(pl)DMPlayerDelegate(im)playerDidRequestFullscreen:",
+            "mangledName": "$s20DailymotionPlayerSDK16DMPlayerDelegateP26playerDidRequestFullscreenyyAA0D4ViewCF",
+            "moduleName": "DailymotionPlayerSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : DailymotionPlayerSDK.DMPlayerDelegate>",
+            "sugared_genericSig": "<Self where Self : DailymotionPlayerSDK.DMPlayerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playerDidExitFullScreen",
+            "printedName": "playerDidExitFullScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DMPlayerView",
+                "printedName": "DailymotionPlayerSDK.DMPlayerView",
+                "usr": "c:@M@DailymotionPlayerSDK@objc(cs)DMPlayerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DailymotionPlayerSDK@objc(pl)DMPlayerDelegate(im)playerDidExitFullScreen:",
+            "mangledName": "$s20DailymotionPlayerSDK16DMPlayerDelegateP23playerDidExitFullScreenyyAA0D4ViewCF",
             "moduleName": "DailymotionPlayerSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : DailymotionPlayerSDK.DMPlayerDelegate>",
             "sugared_genericSig": "<Self where Self : DailymotionPlayerSDK.DMPlayerDelegate>",
@@ -6667,6 +6739,28 @@
             "declKind": "Func",
             "usr": "s:20DailymotionPlayerSDK12DMPlayerViewC12updateParams6paramsyAA0D10ParametersV_tF",
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC12updateParams6paramsyAA0D10ParametersV_tF",
+            "moduleName": "DailymotionPlayerSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyFullscreenChanged",
+            "printedName": "notifyFullscreenChanged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20DailymotionPlayerSDK12DMPlayerViewC23notifyFullscreenChangedyyF",
+            "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC23notifyFullscreenChangedyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "Custom",
@@ -15885,119 +15979,133 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
       "kind": "StringLiteral",
-      "offset": 625,
+      "offset": 626,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 685,
       "length": 12,
       "value": "\"creativeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
       "kind": "StringLiteral",
-      "offset": 625,
+      "offset": 626,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 685,
       "length": 12,
       "value": "\"creativeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 246,
+      "offset": 318,
+      "length": 26,
+      "value": "\"yyyy-MM-dd HH:mm:ss.SSS \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 482,
+      "length": 15,
+      "value": "\"HH:mm:ss.SSS \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
+      "kind": "StringLiteral",
+      "offset": 677,
       "length": 7,
       "value": "\"Debug\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 285,
+      "offset": 716,
       "length": 6,
       "value": "\"Info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 755,
       "length": 13,
       "value": "\"Error❗️\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 803,
       "length": 9,
       "value": "\"Default\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 409,
+      "offset": 840,
       "length": 7,
       "value": "\"DMLog\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 446,
+      "offset": 877,
       "length": 10,
       "value": "\"INTERNAL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 484,
-      "length": 10,
-      "value": "\"[%@]: %@\""
+      "offset": 915,
+      "length": 12,
+      "value": "\"%@[%@]: %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 530,
-      "length": 14,
-      "value": "\"[%@][%@]: %@\""
+      "offset": 963,
+      "length": 16,
+      "value": "\"%@[%@][%@]: %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 1139,
       "length": 38,
       "value": "\"com.dailymotion.DailymotionPlayerSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 1258,
+      "offset": 1724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 2093,
+      "offset": 2666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 2395,
+      "offset": 2970,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/DMLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 2701,
+      "offset": 3278,
       "length": 5,
       "value": "false"
     },
@@ -16046,126 +16154,126 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3519,
       "length": 5,
       "value": "\"fit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3564,
+      "offset": 3565,
       "length": 6,
       "value": "\"fill\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3620,
+      "offset": 3621,
       "length": 10,
       "value": "\"fillLeft\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3682,
+      "offset": 3683,
       "length": 11,
       "value": "\"fillRight\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3742,
       "length": 9,
       "value": "\"fillTop\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3804,
+      "offset": 3805,
       "length": 12,
       "value": "\"fillBottom\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3519,
       "length": 5,
       "value": "\"fit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3564,
+      "offset": 3565,
       "length": 6,
       "value": "\"fill\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3620,
+      "offset": 3621,
       "length": 10,
       "value": "\"fillLeft\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3682,
+      "offset": 3683,
       "length": 11,
       "value": "\"fillRight\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3742,
       "length": 9,
       "value": "\"fillTop\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3804,
+      "offset": 3805,
       "length": 12,
       "value": "\"fillBottom\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4144,
       "length": 29,
       "value": "\"https:\/\/geo.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4195,
+      "offset": 4196,
       "length": 38,
       "value": "\"https:\/\/geo-stage-01.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4256,
+      "offset": 4257,
       "length": 37,
       "value": "\"https:\/\/geo-preprod.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4144,
       "length": 29,
       "value": "\"https:\/\/geo.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4195,
+      "offset": 4196,
       "length": 38,
       "value": "\"https:\/\/geo-stage-01.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4256,
+      "offset": 4257,
       "length": 37,
       "value": "\"https:\/\/geo-preprod.dailymotion.com\""
     },
@@ -16203,27 +16311,6 @@
       "offset": 4642,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/DMPlayerFullscreenViewController\/DMPlayerFullscreenViewController.swift",
-      "kind": "Array",
-      "offset": 469,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/DMPlayerFullscreenViewController\/DMPlayerFullscreenViewController.swift",
-      "kind": "Array",
-      "offset": 523,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/DMPlayerFullscreenViewController\/DMPlayerFullscreenViewController.swift",
-      "kind": "Array",
-      "offset": 575,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/DMPlayerFullscreenViewController\/DMPlayerFullscreenViewController.swift",
@@ -16401,25 +16488,53 @@
       "value": "\"iOSApp\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerSettings\/PlayerSettingsService.swift",
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 21,
+      "value": "\"enable_ads_controls\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 21,
+      "value": "\"enable_ads_controls\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
       "kind": "BooleanLiteral",
-      "offset": 257,
+      "offset": 437,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerSettings\/PlayerSettingsService.swift",
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
       "kind": "BooleanLiteral",
-      "offset": 294,
+      "offset": 469,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerSettings\/PlayerSettingsService.swift",
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 1070,
       "length": 2,
       "value": "15"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 30,
+      "value": "\"https:\/\/api.dailymotion.com\/\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPI\/PlayerAPIService.swift",
+      "kind": "Array",
+      "offset": 1230,
+      "length": 23,
+      "value": "[\"enable_ads_controls\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Logs\/LogLevel.swift",
@@ -16487,7 +16602,7 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1611,
+      "offset": 1669,
       "length": 5,
       "value": "false"
     },
@@ -16501,42 +16616,42 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16750,
+      "offset": 18006,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16825,
+      "offset": 18081,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 18143,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16750,
+      "offset": 18006,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16825,
+      "offset": 18081,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 18143,
       "length": 1,
       "value": "2"
     },

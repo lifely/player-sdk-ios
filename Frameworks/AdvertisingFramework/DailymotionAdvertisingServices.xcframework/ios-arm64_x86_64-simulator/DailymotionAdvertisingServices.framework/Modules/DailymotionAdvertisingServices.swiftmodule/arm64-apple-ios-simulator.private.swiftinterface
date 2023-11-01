@@ -19,6 +19,7 @@ import os
   @objc public static let imaVersion: Swift.String
   @objc public func imaAdRequested(_ imaAdDetails: [Swift.String : Any], muted: Swift.Bool)
   @objc public func imaAdStop()
+  @objc public func toggleFullscreen()
   @objc public func setFullscreenViewController(viewController: UIKit.UIViewController?)
   @objc public func togglePlay()
   @objc public func toggleMute()

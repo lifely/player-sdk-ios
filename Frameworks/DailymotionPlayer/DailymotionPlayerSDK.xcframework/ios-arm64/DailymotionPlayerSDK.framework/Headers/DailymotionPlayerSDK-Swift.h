@@ -338,7 +338,7 @@ SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK16DMPlayerDelegate_")
 ///
 /// \param url The url to open
 ///
-- (UIViewController * _Nonnull)playerWillPresentFullscreenViewController:(DMPlayerView * _Nonnull)player SWIFT_WARN_UNUSED_RESULT;
+- (UIViewController * _Nullable)playerWillPresentFullscreenViewController:(DMPlayerView * _Nonnull)player SWIFT_WARN_UNUSED_RESULT;
 /// Asks the delegate for a UIViewController to display an Ad dependent by a UIViewController
 /// \param player The <code>DMPlayerView</code> instance that called the delegate
 ///
@@ -392,12 +392,30 @@ SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK16DMPlayerDelegate_")
 /// \param player The <code>DMPlayerView</code> instance that called the delegate
 ///
 - (void)player:(DMPlayerView * _Nonnull)player didChangePresentationMode:(enum PresentationMode)presentationMode;
-/// Informs the delegate  when the scale mode of the player changes after using  <code>DMPlayerView/setScaleMode(scaleMode:)</code>
+/// Informs the delegate when the scale mode of the player changes after using  <code>DMPlayerView/setScaleMode(scaleMode:)</code>
 /// \param player The <code>DMPlayerView</code> instance that called the delegate
 ///
 /// \param scale The scale after change
 ///
 - (void)player:(DMPlayerView * _Nonnull)player didChangeScaleMode:(NSString * _Nonnull)scaleMode;
+/// Informs the delegate when player requests to present the player in Fullscreen
+/// <blockquote>
+/// Warning: This function will be called only if built in fullscreen is disabled.
+/// To disable built in fullscreen you have to return nil in the <code>playerWillPresentFullscreenViewController(_:)</code> delegate function.
+/// After finishing the player state change you have to call
+/// <code>DMPlayerView/notifyFullscreenChanged()</code> and the player will update state.
+///
+/// </blockquote>
+- (void)playerDidRequestFullscreen:(DMPlayerView * _Nonnull)player;
+/// Informs the delegate when player requests to exit the player from Fullscreen state
+/// <blockquote>
+/// Warning: This function will be called only if built in fullscreen is disabled.
+/// To disable built in fullscreen you have to return nil in the <code>playerWillPresentFullscreenViewController(_:)</code> delegate function.
+/// After finishing the player state change you have to call
+/// <code>DMPlayerView/notifyFullscreenChanged()</code> and the player will update state.
+///
+/// </blockquote>
+- (void)playerDidExitFullScreen:(DMPlayerView * _Nonnull)player;
 @end
 
 @class NSCoder;

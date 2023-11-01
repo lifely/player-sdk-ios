@@ -278,6 +278,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
 - (void)imaAdStop;
+- (void)toggleFullscreen;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
 - (void)togglePlay;
 - (void)toggleMute;
@@ -603,6 +604,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
 - (void)imaAdStop;
+- (void)toggleFullscreen;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
 - (void)togglePlay;
 - (void)toggleMute;
