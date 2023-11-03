@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5IRD5TkVhSs0loAuJcyfYijdIzU=
+		afPmHzINsX+3iXjEP9eYT00WbjM=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jzKC8NzBuOhdFTXYIp6UygEY4XA=
+		CUIfrg4FECTIYm1veail9DFpJQ4=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ug2wTQcKHllC4jAIPWB8N39tOsE=
+		5SnBRwIYsFae07csX/7GjK1L05Y=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jzKC8NzBuOhdFTXYIp6UygEY4XA=
+		CUIfrg4FECTIYm1veail9DFpJQ4=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5fzduD5m8eZPhUdX7ZkZj9T7+C8=
+		azXAbVHV5s7p1Z29a8HIpzEB0fA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HHK4w3agvNJ49UlWCwfbS/mXH8PD4qJSNvIhbnZkSNA=
+			7Ddo0WIeg2h9qy7cILsRDmAqdI4bWw2vn5Vef+DQgUI=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kFkAMbdxs5Tq88s/Ya/FUcFjOjtds5nl+YOBa7BZErU=
+			XeKpdCjNnQ13SMGHDcJlom9BUeDuqWVujK7Pw2jUfbk=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HHK4w3agvNJ49UlWCwfbS/mXH8PD4qJSNvIhbnZkSNA=
+			7Ddo0WIeg2h9qy7cILsRDmAqdI4bWw2vn5Vef+DQgUI=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -169,7 +169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wldTbrTtow8jdZyKmtiO1Z3ZneiUK5aLx4ilQ2pyDt8=
+			GDtrnNLaG+sFfQKtFJid7E9r4aFnGUlN6O579nGZU5U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

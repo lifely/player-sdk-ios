@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CqFASZLHJ+U/kKrRvPFfA08IQvM=
+		61Ec1GESuipZw59jQR2lxzbfOnY=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		jzKC8NzBuOhdFTXYIp6UygEY4XA=
+		CUIfrg4FECTIYm1veail9DFpJQ4=
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pmXVKCDGsrAFRqm01dvygKW+KIk=
+		puobS5TG97JqvhRMzH4tl1sLNZc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HHK4w3agvNJ49UlWCwfbS/mXH8PD4qJSNvIhbnZkSNA=
+			7Ddo0WIeg2h9qy7cILsRDmAqdI4bWw2vn5Vef+DQgUI=
 			</data>
 		</dict>
 		<key>Modules/DailymotionAdvertisingServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -114,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+R4lISi5tpeOvuLEMS5tA4iA7xBhJ31d/Qifen90p94=
+			VrOJM4pWSbhkODiJxDklOXFTb9g+Z5qDo9A6VqoahyI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
