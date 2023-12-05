@@ -17078,7 +17078,7 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/DMPlayerWebViewContentController.swift",
       "kind": "StringLiteral",
-      "offset": 5699,
+      "offset": 5706,
       "length": 10,
       "value": "\"DailymotionPlayerSDK.Trampoline\""
     },
