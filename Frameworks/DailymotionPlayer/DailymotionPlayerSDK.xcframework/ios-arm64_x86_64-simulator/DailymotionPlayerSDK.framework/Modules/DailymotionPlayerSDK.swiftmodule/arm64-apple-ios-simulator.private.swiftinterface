@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DailymotionPlayerSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DailymotionPlayerSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import AdSupport
@@ -14,6 +14,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os.log
 import os
 @objc public protocol DMAdDelegate {
@@ -61,8 +62,8 @@ public struct DMPlayerParameters : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension DailymotionPlayerSDK.DMPlayerParameters : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -87,7 +88,7 @@ extension DailymotionPlayerSDK.DMPlayerParameters : Swift.CustomStringConvertibl
   @objc optional func videoIsBuffering(_ player: DailymotionPlayerSDK.DMPlayerView)
 }
 public enum PlayerError : Swift.Error {
-  case underlyingRemoteError(error: Swift.Error)
+  case underlyingRemoteError(error: any Swift.Error)
   case advertisingModuleMissing
   case playerIdNotFound
   case stateNotAvailable
@@ -113,8 +114,8 @@ extension DailymotionPlayerSDK.PlayerError : Foundation.LocalizedError {
   public var error: Swift.String?
   @objc override dynamic public init()
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogLevel : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   public typealias RawValue = Swift.UInt
@@ -132,14 +133,14 @@ public struct LogLevel : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   public var status: Swift.String
   public var reason: Swift.String
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol DMPlayerDelegate {
   @objc func player(_ player: DailymotionPlayerSDK.DMPlayerView, openUrl url: Foundation.URL)
   @objc func playerWillPresentFullscreenViewController(_ player: DailymotionPlayerSDK.DMPlayerView) -> UIKit.UIViewController?
   @objc func playerWillPresentAdInParentViewController(_ player: DailymotionPlayerSDK.DMPlayerView) -> UIKit.UIViewController
-  @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didFailWithError error: Swift.Error)
+  @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didFailWithError error: any Swift.Error)
   @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didChangeControls isVisible: Swift.Bool)
   @objc optional func playerDidStart(_ player: DailymotionPlayerSDK.DMPlayerView)
   @objc optional func playerDidEnd(_ player: DailymotionPlayerSDK.DMPlayerView)
@@ -160,11 +161,11 @@ public enum DMPlayerFullscreenOrientation : Swift.Codable {
   case upsidedown
   public static func == (a: DailymotionPlayerSDK.DMPlayerFullscreenOrientation, b: DailymotionPlayerSDK.DMPlayerFullscreenOrientation) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -173,15 +174,15 @@ extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStrin
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class DMPlayerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var isFullscreen: Swift.Bool
-  @_Concurrency.MainActor(unsafe) weak public var playerDelegate: DailymotionPlayerSDK.DMPlayerDelegate? {
+  @_Concurrency.MainActor(unsafe) weak public var playerDelegate: (any DailymotionPlayerSDK.DMPlayerDelegate)? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var videoDelegate: DailymotionPlayerSDK.DMVideoDelegate? {
+  @_Concurrency.MainActor(unsafe) weak public var videoDelegate: (any DailymotionPlayerSDK.DMVideoDelegate)? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var adDelegate: DailymotionPlayerSDK.DMAdDelegate? {
+  @_Concurrency.MainActor(unsafe) weak public var adDelegate: (any DailymotionPlayerSDK.DMAdDelegate)? {
     get
     set
   }
@@ -268,14 +269,14 @@ public struct DMPlayerState : Swift.Codable {
   public var videoDuration: Swift.Double?
   public var playerError: DailymotionPlayerSDK.StatePlayerError?
   public var adCompanion: [DailymotionPlayerSDK.AdCompanion]?
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct StatePlayerError : Swift.Codable {
   public var title: Swift.String?
   public var message: Swift.String?
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct AdCompanion : Swift.Codable {
   public var id: Swift.String?
@@ -284,8 +285,8 @@ public struct AdCompanion : Swift.Codable {
   public var apiFramework: Swift.String?
   public var type: Swift.String?
   public var adCompanionRequired: Swift.Bool?
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @_inheritsConvenienceInitializers open class PlayerVideoChangeEvent : ObjectiveC.NSObject, Swift.Codable {
   public var videoId: Swift.String?
@@ -297,8 +298,8 @@ public struct AdCompanion : Swift.Codable {
   public var duration: Swift.Double?
   @objc override dynamic public init()
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc open class PlayerAdLoadedEvent : ObjectiveC.NSObject, Swift.Codable {
   public var position: Swift.String
@@ -306,16 +307,16 @@ public struct AdCompanion : Swift.Codable {
   public var skippable: Swift.Bool
   public var autoplay: Swift.Bool
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
-public typealias CreatePlayerCompletionHandler = ((DailymotionPlayerSDK.DMPlayerView?, Swift.Error?) -> Swift.Void)
+public typealias CreatePlayerCompletionHandler = ((DailymotionPlayerSDK.DMPlayerView?, (any Swift.Error)?) -> Swift.Void)
 public let Dailymotion: DailymotionPlayerSDK.DailymotionPlayer
 @_hasMissingDesignatedInitializers open class DailymotionPlayer {
   public static let sdkVersion: Swift.String
-  public func createPlayer(playerId: Swift.String, videoId: Swift.String? = nil, playlistId: Swift.String? = nil, playerParameters: DailymotionPlayerSDK.DMPlayerParameters = DMPlayerParameters(), playerDelegate: DailymotionPlayerSDK.DMPlayerDelegate? = nil, videoDelegate: DailymotionPlayerSDK.DMVideoDelegate? = nil, adDelegate: DailymotionPlayerSDK.DMAdDelegate? = nil, logLevels: DailymotionPlayerSDK.LogLevel? = nil, completion: @escaping DailymotionPlayerSDK.CreatePlayerCompletionHandler)
+  public func createPlayer(playerId: Swift.String, videoId: Swift.String? = nil, playlistId: Swift.String? = nil, playerParameters: DailymotionPlayerSDK.DMPlayerParameters = DMPlayerParameters(), playerDelegate: (any DailymotionPlayerSDK.DMPlayerDelegate)? = nil, videoDelegate: (any DailymotionPlayerSDK.DMVideoDelegate)? = nil, adDelegate: (any DailymotionPlayerSDK.DMAdDelegate)? = nil, logLevels: DailymotionPlayerSDK.LogLevel? = nil, completion: @escaping DailymotionPlayerSDK.CreatePlayerCompletionHandler)
   #if compiler(>=5.3) && $AsyncAwait
-  public func createPlayer(playerId: Swift.String, videoId: Swift.String? = nil, playlistId: Swift.String? = nil, playerParameters: DailymotionPlayerSDK.DMPlayerParameters = DMPlayerParameters(), playerDelegate: DailymotionPlayerSDK.DMPlayerDelegate? = nil, videoDelegate: DailymotionPlayerSDK.DMVideoDelegate? = nil, adDelegate: DailymotionPlayerSDK.DMAdDelegate? = nil, logLevels: DailymotionPlayerSDK.LogLevel? = nil) async throws -> DailymotionPlayerSDK.DMPlayerView
+  public func createPlayer(playerId: Swift.String, videoId: Swift.String? = nil, playlistId: Swift.String? = nil, playerParameters: DailymotionPlayerSDK.DMPlayerParameters = DMPlayerParameters(), playerDelegate: (any DailymotionPlayerSDK.DMPlayerDelegate)? = nil, videoDelegate: (any DailymotionPlayerSDK.DMVideoDelegate)? = nil, adDelegate: (any DailymotionPlayerSDK.DMAdDelegate)? = nil, logLevels: DailymotionPlayerSDK.LogLevel? = nil) async throws -> DailymotionPlayerSDK.DMPlayerView
   #endif
   @objc deinit
 }
