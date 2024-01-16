@@ -1,26 +1,28 @@
+<p float="left">
+  <img src="https://corpostatic.dailymotion.com/corporate-cms-upload-assets-prod/uploads/sites/150001/2024/01/Dailymotion-for-Developers.png" width="500" />
+</p>
 
 # Dailymotion Native iOS SDK
-
-<p float="left">
-  <img src="https://corpostatic.dailymotion.com/corporate-cms-upload-assets-prod/uploads/sites/150001/2022/02/dailymotion.svg" width="500" />
-  <img src="https://corpostatic.dailymotion.com/corporate-cms-upload-assets-prod/uploads/sites/150001/2022/02/developers.svg" width="500" /> 
-</p>
 
 
 ## Full SDK Documentation
  [https://developers.dailymotion.com/sdk/player-sdk/ios](https://developers.dailymotion.com/sdk/player-sdk/ios)
 
+ <br>
+
 ## Sample Apps
 [https://github.com/dailymotion/player-sdk-ios-samples/](https://github.com/dailymotion/player-sdk-ios-samples/)
 
-## Supported versions & requirements:
+<br>
 
+## Supported versions & requirements:
 - Swift 5+
-- iOS 13+
+- iOS 14+
 - Xcode 14+
 
-## Features
+<br>
 
+## Features
 - Remote Player management
 - iOS 16 support
 - Google IMA support
