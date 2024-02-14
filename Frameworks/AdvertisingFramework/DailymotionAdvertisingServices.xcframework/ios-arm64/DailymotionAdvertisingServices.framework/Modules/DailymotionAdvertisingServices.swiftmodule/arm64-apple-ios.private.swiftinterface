@@ -24,11 +24,14 @@ import os
   @objc public func imaAdStop()
   @objc public func toggleFullscreen()
   @objc public func setFullscreenViewController(viewController: UIKit.UIViewController?)
+  @objc public func play()
+  @objc public func pause()
   @objc public func togglePlay()
   @objc public func toggleMute()
   @objc deinit
 }
 @objc open class DMAdvertisingServices : ObjectiveC.NSObject {
+  public static let sdkVersion: Swift.String
   @objc final public let imaManager: DailymotionAdvertisingServices.IMAAdManager
   @objc final public let omidManager: DailymotionAdvertisingServices.OMSDKManager
   @objc public init(webView: WebKit.WKWebView, imaContainer: UIKit.UIView, imaDelegate: any DailymotionAdvertisingServices.IMADelegate, logLevel: Foundation.NSNumber, enableAdsControls: Swift.Bool)

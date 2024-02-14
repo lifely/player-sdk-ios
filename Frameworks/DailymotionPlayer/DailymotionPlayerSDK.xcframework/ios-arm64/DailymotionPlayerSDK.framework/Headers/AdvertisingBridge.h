@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)imaPlayPause;
 - (void)imaToggleMute;
 - (void)imaToggleFullscreen;
+- (void)imaPause;
+- (void)imaPlay;
 
 @end
 

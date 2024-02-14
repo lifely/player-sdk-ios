@@ -6,6 +6,7 @@ import AVKit
 import AdSupport
 import AppTrackingTransparency
 import Combine
+import DailymotionChromecast
 @_exported import DailymotionPlayerSDK
 import Foundation
 import StoreKit
@@ -318,6 +319,7 @@ public let Dailymotion: DailymotionPlayerSDK.DailymotionPlayer
   #if compiler(>=5.3) && $AsyncAwait
   public func createPlayer(playerId: Swift.String, videoId: Swift.String? = nil, playlistId: Swift.String? = nil, playerParameters: DailymotionPlayerSDK.DMPlayerParameters = DMPlayerParameters(), playerDelegate: (any DailymotionPlayerSDK.DMPlayerDelegate)? = nil, videoDelegate: (any DailymotionPlayerSDK.DMVideoDelegate)? = nil, adDelegate: (any DailymotionPlayerSDK.DMAdDelegate)? = nil, logLevels: DailymotionPlayerSDK.LogLevel? = nil) async throws -> DailymotionPlayerSDK.DMPlayerView
   #endif
+  public func setupDailymotionChromecast()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DMWKWebView : WebKit.WKWebView {

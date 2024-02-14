@@ -327,6 +327,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)imaAdStop;
 - (void)toggleFullscreen;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
+- (void)play;
+- (void)pause;
 - (void)togglePlay;
 - (void)toggleMute;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
