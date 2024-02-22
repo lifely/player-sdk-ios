@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DailymotionChromecast
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVKit
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import GoogleCast
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public enum ChromecastError : Swift.Error {
+  case underlyingCastError(error: any Swift.Error)
+  case castSessionMissing
+  case remoteMediaClientMissing
+  case mediaStatusMissing
+  case remoteMetadataMissing
+}
+public protocol DailymotionChromecastDelegate : AnyObject {
+  func castStarted(playable: DailymotionChromecast.Playable?)
+  func castStopped(position: Swift.Double, playable: DailymotionChromecast.Playable?, suspended: Swift.Bool, error: DailymotionChromecast.ChromecastError?)
+}
+open class DMChromecast {
+  public static let sdkVersion: Swift.String
+  weak public var delegate: (any DailymotionChromecast.DailymotionChromecastDelegate)?
+  public var isCasting: Swift.Bool
+  public init(playable: DailymotionChromecast.Playable, containerView: UIKit.UIView, delegate: (any DailymotionChromecast.DailymotionChromecastDelegate)? = nil)
+  public static func startChromecast()
+  public func updatePlayable(playable: DailymotionChromecast.Playable)
+  public func updatePlayablePosition(position: Swift.Double)
+  public func setup()
+  @objc deinit
+}
+public struct Playable : Swift.Codable, Swift.Equatable {
+  public static func == (lhs: DailymotionChromecast.Playable, rhs: DailymotionChromecast.Playable) -> Swift.Bool
+  public var chromecastUrl: Swift.String {
+    get
+  }
+  public var isLive: Swift.Bool {
+    get
+  }
+  public var isVideo: Swift.Bool {
+    get
+  }
+  public var duration: Swift.Int {
+    get
+  }
+  public var currentPosition: Swift.Double
+  public var xid: Swift.String {
+    get
+  }
+  public var thumbnailUrl: Foundation.URL {
+    get
+  }
+  public var thumbnailSize: CoreFoundation.CGSize {
+    get
+  }
+  public var titile: Swift.String {
+    get
+  }
+  public var channelName: Swift.String {
+    get
+  }
+  public init(chromecastUrl: Swift.String, isLive: Swift.Bool, isVideo: Swift.Bool, duration: Swift.Int, currentPosition: Swift.Double, xid: Swift.String, thumbnailUrl: Foundation.URL, thumbnailSize: CoreFoundation.CGSize, titile: Swift.String, channelName: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
