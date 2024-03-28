@@ -322,12 +322,6 @@ public let Dailymotion: DailymotionPlayerSDK.DailymotionPlayer
   public func setupDailymotionChromecast()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DMWKWebView : WebKit.WKWebView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, configuration: WebKit.WKWebViewConfiguration)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.Equatable {}
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.Hashable {}
 extension DailymotionPlayerSDK.DMPlayerParameters.ScaleMode : Swift.RawRepresentable {}

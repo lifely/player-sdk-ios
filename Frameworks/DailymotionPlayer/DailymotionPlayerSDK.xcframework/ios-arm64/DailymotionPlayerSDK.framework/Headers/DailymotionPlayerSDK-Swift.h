@@ -281,7 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
-@import WebKit;
 #endif
 
 #endif
@@ -577,16 +576,6 @@ SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK15DMVideoDelegate_")
 - (void)videoIsBuffering:(DMPlayerView * _Nonnull)player;
 @end
 
-@class WKWebViewConfiguration;
-
-/// You can observe bounds change with this view subclass via <code>ViewBoundsObserving</code> delegate.
-SWIFT_CLASS("_TtC20DailymotionPlayerSDK11DMWKWebView")
-@interface DMWKWebView : WKWebView
-- (void)layoutSubviews;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 /// Object that contains information about Ad End Event
 /// \param type The of the ad
@@ -646,10 +635,6 @@ SWIFT_CLASS("_TtC20DailymotionPlayerSDK22PlayerVideoChangeEvent")
 @interface PlayerVideoChangeEvent : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
-
-
 
 
 #endif
