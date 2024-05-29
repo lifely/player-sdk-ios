@@ -57,6 +57,10 @@
 		<data>
 		xrLmOHGKRkA1PdlxjX8QdhUlYC8=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		RAcq4EGpK1hqmkakGbW0lW97Veg=
+		</data>
 		<key>Retina-Regular.ttf</key>
 		<data>
 		njFxGxPnzzUb9M4/qbXk7x3eYzs=
@@ -145,6 +149,13 @@
 			<key>hash2</key>
 			<data>
 			WUTtOynoFPERt7tbMpqwDPv3YX9EfZjQDLz1X3hRVww=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y9rCn1BvJEuGq+Gts+VfduprFGVrz/fa/V/srinjHtY=
 			</data>
 		</dict>
 		<key>Retina-Regular.ttf</key>
