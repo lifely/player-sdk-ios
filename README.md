@@ -24,7 +24,7 @@
 
 ## Features
 - Remote Player management
-- iOS 16 support
+- iOS 17 support
 - Google IMA support
 - OMSDK support
 - Sample player applications & code samples
