@@ -209,6 +209,8 @@ extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStrin
   #endif
   @_Concurrency.MainActor(unsafe) public func updateParams(params: DailymotionPlayerSDK.DMPlayerParameters)
   @_Concurrency.MainActor(unsafe) public func notifyFullscreenChanged()
+  @_Concurrency.MainActor(unsafe) public func notifyChromecastStarted()
+  @_Concurrency.MainActor(unsafe) public func notifyChromecastStopped()
 }
 extension DailymotionPlayerSDK.DMPlayerView {
   @objc public enum PresentationMode : Swift.Int {
