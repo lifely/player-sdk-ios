@@ -305,6 +305,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class PlayerAdEndEvent;
 @class NSString;
 @class PlayerAdLoadedEvent;
+@class PlayerAdReadyToFetchEvent;
 
 /// Methods for follow the player video events related to livecyle of the Ad playing
 SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK12DMAdDelegate_")
@@ -362,6 +363,12 @@ SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK12DMAdDelegate_")
 /// \param player The <code>DMPlayerView</code> instance that called the delegate
 ///
 - (void)adDidClick:(DMPlayerView * _Nonnull)player;
+/// Informs the delegate when the ad is ready to fetch
+/// \param player The <code>DMPlayerView</code> instance that called the delegate
+///
+/// \param adReadyToFetchEvent A <code>PlayerAdReadyToFetchEvent</code> object that contains info about the ad that is ready to fetch
+///
+- (void)ad:(DMPlayerView * _Nonnull)player adDidReadyToFetch:(PlayerAdReadyToFetchEvent * _Nonnull)adReadyToFetchEvent;
 @end
 
 @class NSURL;
@@ -603,6 +610,14 @@ SWIFT_CLASS("_TtC20DailymotionPlayerSDK16PlayerAdEndEvent")
 ///
 SWIFT_CLASS("_TtC20DailymotionPlayerSDK19PlayerAdLoadedEvent")
 @interface PlayerAdLoadedEvent : NSObject
+@end
+
+
+/// Object that contains information about Ad ReadyToFetch Event
+/// \param position The position of the ad
+///
+SWIFT_CLASS("_TtC20DailymotionPlayerSDK25PlayerAdReadyToFetchEvent")
+@interface PlayerAdReadyToFetchEvent : NSObject
 @end
 
 

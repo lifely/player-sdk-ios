@@ -29,12 +29,19 @@ import os
   @objc optional func adDidImpression(_ player: DailymotionPlayerSDK.DMPlayerView)
   @objc optional func ad(_ player: DailymotionPlayerSDK.DMPlayerView, adDidLoaded adLoadedEvent: DailymotionPlayerSDK.PlayerAdLoadedEvent)
   @objc optional func adDidClick(_ player: DailymotionPlayerSDK.DMPlayerView)
+  @objc optional func ad(_ player: DailymotionPlayerSDK.DMPlayerView, adDidReadyToFetch adReadyToFetchEvent: DailymotionPlayerSDK.PlayerAdReadyToFetchEvent)
 }
 @_hasMissingDesignatedInitializers open class DMLog {
   public func debugMessage(_ message: Swift.String, isInternal: Swift.Bool = false)
   public func infoMessage(_ message: Swift.String, isInternal: Swift.Bool = false)
   public func errorMessage(_ message: Swift.String, isInternal: Swift.Bool = false)
   @objc deinit
+}
+@objc open class PlayerAdReadyToFetchEvent : ObjectiveC.NSObject, Swift.Codable {
+  public var position: Swift.String
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct DMPlayerParameters : Swift.Codable {
   public var customConfig: [Swift.String : Swift.String]?
