@@ -41,8 +41,8 @@ let package = Package(
       path: "Frameworks/AdvertisingFramework/GoogleInteractiveMediaAds.xcframework"
     ),
     .binaryTarget(
-      name: "OMSDK_Dailymotion",
-      path: "Frameworks/AdvertisingFramework/OMSDK_Dailymotion.xcframework"
+      name: "OMSDK_Dailymotion3",
+      path: "Frameworks/AdvertisingFramework/OMSDK_Dailymotion3.xcframework"
     )
   ]
 )

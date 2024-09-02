@@ -1,4 +1,0 @@
-module OMSDK_Dailymotion {
-    header "Headers/OMIDImports.h"
-    export *
-}

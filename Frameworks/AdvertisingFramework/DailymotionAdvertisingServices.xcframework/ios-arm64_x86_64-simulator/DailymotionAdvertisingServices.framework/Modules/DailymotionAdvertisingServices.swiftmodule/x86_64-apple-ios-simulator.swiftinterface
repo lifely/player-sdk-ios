@@ -8,7 +8,7 @@ import Combine
 import DeveloperToolsSupport
 import Foundation
 import GoogleInteractiveMediaAds
-import OMSDK_Dailymotion
+import OMSDK_Dailymotion3
 import Swift
 import SwiftUI
 import UIKit
