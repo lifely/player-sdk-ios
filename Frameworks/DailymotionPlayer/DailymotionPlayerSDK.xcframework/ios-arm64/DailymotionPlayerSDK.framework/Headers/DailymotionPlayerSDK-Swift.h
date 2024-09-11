@@ -469,6 +469,12 @@ SWIFT_PROTOCOL("_TtP20DailymotionPlayerSDK16DMPlayerDelegate_")
 ///
 /// </blockquote>
 - (void)playerDidExitFullScreen:(DMPlayerView * _Nonnull)player;
+/// Informs the delegate when the playback speed changes
+/// \param player The <code>DMPlayerView</code> instance that called the delegate
+///
+/// \param speed The player playback speed
+///
+- (void)player:(DMPlayerView * _Nonnull)player didChangePlaybackSpeed:(double)speed;
 @end
 
 @class NSCoder;

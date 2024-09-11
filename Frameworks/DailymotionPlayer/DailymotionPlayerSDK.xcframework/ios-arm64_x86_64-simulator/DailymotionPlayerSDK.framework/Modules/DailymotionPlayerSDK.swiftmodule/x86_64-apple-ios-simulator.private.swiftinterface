@@ -160,6 +160,7 @@ public struct LogLevel : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didChangeScaleMode scaleMode: Swift.String)
   @objc optional func playerDidRequestFullscreen(_ player: DailymotionPlayerSDK.DMPlayerView)
   @objc optional func playerDidExitFullScreen(_ player: DailymotionPlayerSDK.DMPlayerView)
+  @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didChangePlaybackSpeed speed: Swift.Double)
 }
 public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?) -> Swift.Void)
 public enum DMPlayerFullscreenOrientation : Swift.Codable {
@@ -215,6 +216,7 @@ extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStrin
   @_Concurrency.MainActor(unsafe) public func getState() async throws -> DailymotionPlayerSDK.DMPlayerState
   #endif
   @_Concurrency.MainActor(unsafe) public func updateParams(params: DailymotionPlayerSDK.DMPlayerParameters)
+  @_Concurrency.MainActor(unsafe) public func setPlaybackSpeed(speed: Swift.Double)
   @_Concurrency.MainActor(unsafe) public func notifyFullscreenChanged()
   @_Concurrency.MainActor(unsafe) public func notifyChromecastStarted()
   @_Concurrency.MainActor(unsafe) public func notifyChromecastStopped()
