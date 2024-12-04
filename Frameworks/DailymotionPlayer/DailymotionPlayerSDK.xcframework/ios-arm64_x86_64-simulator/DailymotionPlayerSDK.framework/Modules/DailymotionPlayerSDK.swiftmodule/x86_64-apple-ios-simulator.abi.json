@@ -17273,14 +17273,14 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerState.swift",
       "kind": "StringLiteral",
-      "offset": 14504,
+      "offset": 15427,
       "length": 6,
       "value": "\"adId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerState.swift",
       "kind": "StringLiteral",
-      "offset": 14580,
+      "offset": 15503,
       "length": 10,
       "value": "\"required\""
     },

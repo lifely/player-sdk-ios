@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YODgoYPiG07xopQ/AFyUNkXAUrw=
+		BqD2e61HbsZ6UICgU+w2cqWGlEU=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8Gh42ZgPCEFvgXKBsoLDnSgSflI=
+		RfNYUQob5TgZNv+fgaEW/tvBokk=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YZbz/SvNcFDRGyBe9gpaZXNQGzc=
+		rZd4HDybuF8O7XDnpgKyR8q49BQ=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8Gh42ZgPCEFvgXKBsoLDnSgSflI=
+		RfNYUQob5TgZNv+fgaEW/tvBokk=
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tDttE9aq3dqOCDjsCsu7/yR6eSw=
+		lf4z5o9xqF7scrrmCk4tLrNU3no=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bmUp/d5YFRTw0ddF29U/neK3k8ZGE49KzL/N91pKZs=
+			YVtKtdI3l1rgpgYswKKtG8r/Mx4CGvK9YAxH2yDXBtc=
 			</data>
 		</dict>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -135,14 +135,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RstyQ9scKlI7lj2jaXR8hM5oscmZMSlH1kfRjhbV5CA=
+			ymOk1fYsz5eIl+cGSsU1+YtqoeHnA4ITOJB9f2VoNdU=
 			</data>
 		</dict>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/bmUp/d5YFRTw0ddF29U/neK3k8ZGE49KzL/N91pKZs=
+			YVtKtdI3l1rgpgYswKKtG8r/Mx4CGvK9YAxH2yDXBtc=
 			</data>
 		</dict>
 		<key>Modules/DailymotionPlayerSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eEqpDGTieHB4ikZJxoEF7kQdwRVI9Vu0BYcKYaJBIa4=
+			VJZLsncZ5Jx2Zt1n9lWZlcnB5ff9+mWv9pXrmkybrWA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
