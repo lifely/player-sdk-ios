@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "DailymotionPlayerSDK",
+    "printedName": "DailymotionPlayerSDK",
     "children": [
       {
         "kind": "Import",
@@ -471,6 +471,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -616,7 +632,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -816,6 +848,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2121,6 +2167,9 @@
                 "moduleName": "DailymotionPlayerSDK",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
                 "accessors": [
                   {
                     "kind": "Accessor",
@@ -2163,6 +2212,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2349,6 +2412,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2948,6 +3025,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3441,6 +3534,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -4108,6 +4215,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4565,6 +4686,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "OptionSet",
             "printedName": "OptionSet",
             "children": [
@@ -5000,6 +5135,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5739,6 +5888,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6147,6 +6312,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6205,8 +6384,9 @@
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -6292,8 +6472,9 @@
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
@@ -6397,8 +6578,9 @@
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
@@ -6502,8 +6684,9 @@
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "RawDocComment"
@@ -6616,8 +6799,9 @@
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
@@ -6737,6 +6921,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl",
@@ -6805,6 +6990,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC11loadContent7videoId08playlistI09startTimeySSSg_AHSdSgtF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6827,6 +7013,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC4playyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6849,6 +7036,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC5pauseyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6877,6 +7065,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC12setSubtitles4codeySS_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6905,6 +7094,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC10setQuality5levelySS_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6933,6 +7123,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC4seek2toySd_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6976,6 +7167,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC13setFullscreen10fullscreen11orientationySb_AA0dG11OrientationOSgtF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7004,6 +7196,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC7setMute4muteySb_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7046,6 +7239,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC15setCustomConfig6configySDyS2SG_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7074,6 +7268,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC12setScaleMode05scaleH0yAA0D10ParametersV0gH0O_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7122,6 +7317,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC8getState10completionyyAA0dG0VSgc_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7145,6 +7341,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC8getStateAA0dG0VyYaKF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7174,6 +7371,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC12updateParams6paramsyAA0D10ParametersV_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7202,6 +7400,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC16setPlaybackSpeed5speedySd_tF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7224,6 +7423,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC23notifyFullscreenChangedyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7246,6 +7446,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC23notifyChromecastStartedyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7268,6 +7469,7 @@
             "mangledName": "$s20DailymotionPlayerSDK12DMPlayerViewC23notifyChromecastStoppedyyF",
             "moduleName": "DailymotionPlayerSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -7302,6 +7504,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -7525,6 +7728,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -7568,6 +7785,7 @@
         "moduleName": "DailymotionPlayerSDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -7581,6 +7799,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7629,13 +7861,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -13182,6 +13407,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -13484,6 +13723,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -14228,6 +14481,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -15180,6 +15447,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15678,6 +15959,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -16259,7 +16554,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -16366,20 +16677,6 @@
       "offset": 351,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 680,
-      "length": 13,
-      "value": "\"description\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
-      "kind": "StringLiteral",
-      "offset": 739,
-      "length": 12,
-      "value": "\"creativeId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/PlayerEvents\/PlayerAdStartEvent.swift",
@@ -16580,69 +16877,6 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 3519,
-      "length": 5,
-      "value": "\"fit\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 3565,
-      "length": 6,
-      "value": "\"fill\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 3621,
-      "length": 10,
-      "value": "\"fillLeft\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 3683,
-      "length": 11,
-      "value": "\"fillRight\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 3742,
-      "length": 9,
-      "value": "\"fillTop\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 3805,
-      "length": 12,
-      "value": "\"fillBottom\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 4144,
-      "length": 29,
-      "value": "\"https:\/\/geo.dailymotion.com\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 4196,
-      "length": 38,
-      "value": "\"https:\/\/geo-stage-01.dailymotion.com\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 4257,
-      "length": 37,
-      "value": "\"https:\/\/geo-preprod.dailymotion.com\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
-      "kind": "StringLiteral",
       "offset": 4144,
       "length": 29,
       "value": "\"https:\/\/geo.dailymotion.com\""
@@ -16698,10 +16932,10 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/DMPlayerFullscreenViewController\/DMPlayerFullscreenViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 213,
-      "length": 32,
-      "value": "\"DailymotionPlayerSDK.DMPlayerFullscreenViewController\""
+      "kind": "BooleanLiteral",
+      "offset": 1026,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Bridges\/ChromecastBridge\/ChromecastManager.swift",
@@ -16887,13 +17121,6 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 375,
-      "length": 21,
-      "value": "\"enable_ads_controls\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
       "kind": "BooleanLiteral",
       "offset": 436,
       "length": 4,
@@ -16923,20 +17150,6 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
-      "length": 6,
-      "value": "\"live\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1048,
-      "length": 5,
-      "value": "\"vod\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
       "offset": 1106,
       "length": 7,
       "value": "\"video\""
@@ -16947,27 +17160,6 @@
       "offset": 1129,
       "length": 7,
       "value": "\"audio\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1106,
-      "length": 7,
-      "value": "\"video\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1129,
-      "length": 7,
-      "value": "\"audio\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 12,
-      "value": "\"media_type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerAPIService\/PlayerAPIService.swift",
@@ -17139,13 +17331,6 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
-      "kind": "StringLiteral",
-      "offset": 1162,
-      "length": 12,
-      "value": "\"DailymotionPlayerSDK.DMPlayerView\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
       "kind": "IntegerLiteral",
       "offset": 19351,
       "length": 1,
@@ -17164,34 +17349,6 @@
       "offset": 19488,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 19351,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 19426,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 19488,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Bridges\/AdvertisingBridge\/AdvertisingManager.swift",
-      "kind": "StringLiteral",
-      "offset": 350,
-      "length": 18,
-      "value": "\"DailymotionPlayerSDK.AdvertisingManager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/ForceUpdate\/ForceUpdateService.swift",
@@ -17248,20 +17405,6 @@
       "offset": 641,
       "length": 5,
       "value": "86400"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerState.swift",
-      "kind": "StringLiteral",
-      "offset": 15427,
-      "length": 6,
-      "value": "\"adId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerState.swift",
-      "kind": "StringLiteral",
-      "offset": 15503,
-      "length": 10,
-      "value": "\"required\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerState.swift",
@@ -17663,32 +17806,11 @@
       "value": "\"triggerEvent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/DMPlayerWebViewContentController.swift",
-      "kind": "StringLiteral",
-      "offset": 827,
-      "length": 32,
-      "value": "\"DailymotionPlayerSDK.DMPlayerWebViewContentController\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/DMPlayerWebViewContentController.swift",
-      "kind": "StringLiteral",
-      "offset": 6264,
-      "length": 10,
-      "value": "\"DailymotionPlayerSDK.Trampoline\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DailymotionPlayer.swift",
       "kind": "Array",
       "offset": 2247,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/DMPlayerWebView.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 15,
-      "value": "\"DailymotionPlayerSDK.DMPlayerWebView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/WebView\/DMPlayerWKWebViewFactory.swift",
@@ -17703,139 +17825,6 @@
       "offset": 1091,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 247,
-      "length": 25,
-      "value": "\"notifyFullscreenChanged\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 287,
-      "length": 6,
-      "value": "\"load\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 308,
-      "length": 6,
-      "value": "\"play\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 330,
-      "length": 7,
-      "value": "\"pause\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 352,
-      "length": 6,
-      "value": "\"seek\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 377,
-      "length": 10,
-      "value": "\"subtitle\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 407,
-      "length": 16,
-      "value": "\"set-ads-config\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 443,
-      "length": 11,
-      "value": "\"scaleMode\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 472,
-      "length": 9,
-      "value": "\"quality\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 496,
-      "length": 6,
-      "value": "\"mute\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 519,
-      "length": 8,
-      "value": "\"unmute\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 547,
-      "length": 10,
-      "value": "\"starTime\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 572,
-      "length": 6,
-      "value": "\"loop\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 599,
-      "length": 12,
-      "value": "\"fullscreen\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 633,
-      "length": 13,
-      "value": "\"playerstate\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 660,
-      "length": 5,
-      "value": "\"ima\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 699,
-      "length": 25,
-      "value": "\"nativeChromecastStarted\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 758,
-      "length": 25,
-      "value": "\"nativeChromecastStopped\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
-      "kind": "StringLiteral",
-      "offset": 813,
-      "length": 7,
-      "value": "\"speed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/PlayerCommandExecutor\/PlayerCommands.swift",
