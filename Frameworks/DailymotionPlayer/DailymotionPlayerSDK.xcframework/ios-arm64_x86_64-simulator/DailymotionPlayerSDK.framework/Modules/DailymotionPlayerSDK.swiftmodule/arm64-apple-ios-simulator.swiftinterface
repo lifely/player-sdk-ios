@@ -221,6 +221,9 @@ extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStrin
   @_Concurrency.MainActor @preconcurrency public func notifyChromecastStopped()
 }
 extension DailymotionPlayerSDK.DMPlayerView {
+  @_Concurrency.MainActor @preconcurrency public func setConsentString(_ consentString: Swift.String?)
+}
+extension DailymotionPlayerSDK.DMPlayerView {
   @objc public enum PresentationMode : Swift.Int {
     case inline = 0
     case pictureInPicture = 1
