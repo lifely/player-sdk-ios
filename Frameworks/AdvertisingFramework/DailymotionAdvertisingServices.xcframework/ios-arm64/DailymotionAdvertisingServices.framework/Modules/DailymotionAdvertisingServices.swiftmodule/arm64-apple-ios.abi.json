@@ -2720,7 +2720,14 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11123,
+      "offset": 902,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionAdvertisingServices\/Sources\/Private\/IMA\/IMAAdManager\/IMAAdManagerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11279,
       "length": 4,
       "value": "true"
     },

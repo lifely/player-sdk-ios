@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DailymotionPlayerSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DailymotionPlayerSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVKit
 import AdSupport
 import AppTrackingTransparency
@@ -163,15 +163,15 @@ public struct LogLevel : Swift.OptionSet, Swift.Equatable, Swift.Hashable {
   @objc optional func playerDidExitFullScreen(_ player: DailymotionPlayerSDK.DMPlayerView)
   @objc optional func player(_ player: DailymotionPlayerSDK.DMPlayerView, didChangePlaybackSpeed speed: Swift.Double)
 }
-public typealias StateCompletionHandler = ((DailymotionPlayerSDK.DMPlayerState?) -> Swift.Void)
+public typealias StateCompletionHandler = (DailymotionPlayerSDK.DMPlayerState?) -> Swift.Void
 public enum DMPlayerFullscreenOrientation : Swift.Codable {
   case landscapeRight
   case landscapeLeft
   case portrait
   case upsidedown
   public static func == (a: DailymotionPlayerSDK.DMPlayerFullscreenOrientation, b: DailymotionPlayerSDK.DMPlayerFullscreenOrientation) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -219,9 +219,6 @@ extension DailymotionPlayerSDK.DMPlayerFullscreenOrientation : Swift.CustomStrin
   @_Concurrency.MainActor @preconcurrency public func notifyFullscreenChanged()
   @_Concurrency.MainActor @preconcurrency public func notifyChromecastStarted()
   @_Concurrency.MainActor @preconcurrency public func notifyChromecastStopped()
-}
-extension DailymotionPlayerSDK.DMPlayerView {
-  @_Concurrency.MainActor @preconcurrency public func setConsentString(_ consentString: Swift.String?)
 }
 extension DailymotionPlayerSDK.DMPlayerView {
   @objc public enum PresentationMode : Swift.Int {
@@ -324,7 +321,7 @@ public struct AdCompanion : Swift.Codable {
   open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public typealias CreatePlayerCompletionHandler = ((DailymotionPlayerSDK.DMPlayerView?, (any Swift.Error)?) -> Swift.Void)
+public typealias CreatePlayerCompletionHandler = (DailymotionPlayerSDK.DMPlayerView?, (any Swift.Error)?) -> Swift.Void
 public let Dailymotion: DailymotionPlayerSDK.DailymotionPlayer
 @_hasMissingDesignatedInitializers open class DailymotionPlayer {
   public static let sdkVersion: Swift.String
