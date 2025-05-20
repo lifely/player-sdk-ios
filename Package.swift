@@ -10,12 +10,10 @@ let package = Package(
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
       name: "DailymotionPlayerSDK",
-      targets: ["DailymotionPlayerSDK",
-                "DailymotionChromecast",
-                "GoogleCast",
-                "DailymotionAdvertisingServices" ,
-                "GoogleInteractiveMediaAds",
-                "OMSDK_Dailymotion3"]),
+      targets: ["DailymotionPlayerSDKAgregate"]),
+  ],
+  dependencies: [
+    .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", .exact("3.26.1"))
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -37,12 +35,20 @@ let package = Package(
       path: "Frameworks/DailymotionPlayer/DailymotionPlayerSDK.xcframework"
     ),
     .binaryTarget(
-      name: "GoogleInteractiveMediaAds",
-      path: "Frameworks/AdvertisingFramework/GoogleInteractiveMediaAds.xcframework"
-    ),
-    .binaryTarget(
       name: "OMSDK_Dailymotion3",
       path: "Frameworks/AdvertisingFramework/OMSDK_Dailymotion3.xcframework"
+    ),
+    .target(
+      name: "DailymotionPlayerSDKAgregate",
+      dependencies: [
+        .target(name: "GoogleCast"),
+        .target(name: "OMSDK_Dailymotion3"),
+        .target(name: "DailymotionPlayerSDK"),
+        .target(name: "DailymotionChromecast"),
+        .target(name: "DailymotionAdvertisingServices"),
+        .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios")
+      ],
+      path: "DailymotionPlayerSDKAgregate"
     )
   ]
 )
