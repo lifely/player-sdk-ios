@@ -93,8 +93,6 @@
 		</dict>
 	</array>
 	<key>NSPrivacyTrackingDomains</key>
-	<array>
-		<string>securepubads.g.doubleclick.net</string>
-	</array>
+	<array/>
 </dict>
 </plist>
