@@ -328,6 +328,7 @@ SWIFT_CLASS("_TtC30DailymotionAdvertisingServices12IMAAdManager")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imaVersion;)
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
+- (BOOL)isAdCurrentlyLoading SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdStop;
 - (void)toggleFullscreen;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;
@@ -700,6 +701,7 @@ SWIFT_CLASS("_TtC30DailymotionAdvertisingServices12IMAAdManager")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull imaVersion;)
 + (NSString * _Nonnull)imaVersion SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull)imaAdDetails muted:(BOOL)muted;
+- (BOOL)isAdCurrentlyLoading SWIFT_WARN_UNUSED_RESULT;
 - (void)imaAdStop;
 - (void)toggleFullscreen;
 - (void)setFullscreenViewControllerWithViewController:(UIViewController * _Nullable)viewController;

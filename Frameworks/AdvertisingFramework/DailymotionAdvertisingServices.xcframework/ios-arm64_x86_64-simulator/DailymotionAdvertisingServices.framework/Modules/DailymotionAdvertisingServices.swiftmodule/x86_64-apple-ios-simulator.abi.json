@@ -148,6 +148,28 @@
           },
           {
             "kind": "Function",
+            "name": "isAdCurrentlyLoading",
+            "printedName": "isAdCurrentlyLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DailymotionAdvertisingServices@objc(cs)IMAAdManager(im)isAdCurrentlyLoading",
+            "mangledName": "$s30DailymotionAdvertisingServices12IMAAdManagerC20isAdCurrentlyLoadingSbyF",
+            "moduleName": "DailymotionAdvertisingServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "imaAdStop",
             "printedName": "imaAdStop()",
             "children": [

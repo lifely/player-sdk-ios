@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString * _Nullable )imaSDKVersion;
 - (void)imaAdRequested:(NSDictionary<NSString *, id> * _Nonnull) adRequest muted:(BOOL) muted;
 - (void)imaStop;
+- (BOOL)isAdCurrentlyLoading;
 - (void)imaFullScreenViewController:(UIViewController * _Nullable) viewController;
 - (void)imaPlayPause;
 - (void)imaToggleMute;
