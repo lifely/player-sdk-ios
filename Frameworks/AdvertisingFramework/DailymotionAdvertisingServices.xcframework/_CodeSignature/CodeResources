@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/Assets.car</key>
 		<data>
-		WRb2iYtSgYx7LtBnfwXxrzY3P0g=
+		WhmUxe/OWBQx9RFcI822uNHU424=
 		</data>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/DailymotionAdvertisingServices</key>
 		<data>
-		LQSs5iO749SkYR17q+bzdjWl4pw=
+		PZdmBV1f+SnAbkXvI7WrZmIrAuo=
 		</data>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/Headers/DailymotionAdvertisingServices-Swift.h</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/_CodeSignature/CodeResources</key>
 		<data>
-		6k//X7RQWuFKSYI43qFyDMc8Qp0=
+		qKTAEcAng9rABvLrOuSoNztHc3c=
 		</data>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/omsdk-v1.js</key>
 		<data>
@@ -79,11 +79,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/Assets.car</key>
 		<data>
-		WRb2iYtSgYx7LtBnfwXxrzY3P0g=
+		WhmUxe/OWBQx9RFcI822uNHU424=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/DailymotionAdvertisingServices</key>
 		<data>
-		LJzkY9tJV7kCo/DAuWn+1Eq+y2w=
+		2jr87eS1qH2+Qupd6TWRdW3eHQA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/Headers/DailymotionAdvertisingServices-Swift.h</key>
 		<data>
@@ -156,7 +156,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/_CodeSignature/CodeResources</key>
 		<data>
-		W665NgJFYglVcv1khS+YKC94emk=
+		GtzHMl+rV5qdRWM9LR0JHhPUNFg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/omsdk-v1.js</key>
 		<data>
@@ -173,22 +173,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WRb2iYtSgYx7LtBnfwXxrzY3P0g=
+			WhmUxe/OWBQx9RFcI822uNHU424=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3MkySaJt2lYE/XjskF1XUxpdM6ASur2ckohlRxEkCM=
+			uNy5FT4NX1a/h7zuG4luCoSHjUEHALxSqnVnyfIMeTU=
 			</data>
 		</dict>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/DailymotionAdvertisingServices</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LQSs5iO749SkYR17q+bzdjWl4pw=
+			PZdmBV1f+SnAbkXvI7WrZmIrAuo=
 			</data>
 			<key>hash2</key>
 			<data>
-			jTT1GsRE+emq36isPIQghyyzEBpyaroIWUqBiwKACn4=
+			Y4mRZ6sGLc9VM66gD3ZOldfQqnTygiREWh2ZeomxdW0=
 			</data>
 		</dict>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/Headers/DailymotionAdvertisingServices-Swift.h</key>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6k//X7RQWuFKSYI43qFyDMc8Qp0=
+			qKTAEcAng9rABvLrOuSoNztHc3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			WPHBE6gC8eRsPlRQcpyBYwhxhssCG/VLE+iql3hm+44=
+			5oNly0N6VRfYDZhCncyc/EUlpIG4f+ZQPdvihm3UurA=
 			</data>
 		</dict>
 		<key>ios-arm64/DailymotionAdvertisingServices.framework/omsdk-v1.js</key>
@@ -362,22 +362,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WRb2iYtSgYx7LtBnfwXxrzY3P0g=
+			WhmUxe/OWBQx9RFcI822uNHU424=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3MkySaJt2lYE/XjskF1XUxpdM6ASur2ckohlRxEkCM=
+			uNy5FT4NX1a/h7zuG4luCoSHjUEHALxSqnVnyfIMeTU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/DailymotionAdvertisingServices</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LJzkY9tJV7kCo/DAuWn+1Eq+y2w=
+			2jr87eS1qH2+Qupd6TWRdW3eHQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7qxnL4EpG9uApamFEphUf2l8PnEdnp7aagAV0HM2Cs4=
+			wGoRK/YBzkSUAJuaQeRonHAjhDL7y2CtCfkLiGurhzI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/Headers/DailymotionAdvertisingServices-Swift.h</key>
@@ -562,11 +562,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W665NgJFYglVcv1khS+YKC94emk=
+			GtzHMl+rV5qdRWM9LR0JHhPUNFg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7QqC3S/f2HczCUmOjo2+MTJ+L0qpewsZcUeV6aYAyfg=
+			oxumDAAsdsq9C+y3eBPcDJfNUsHr1bTrwpxbGCr+Jy8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DailymotionAdvertisingServices.framework/omsdk-v1.js</key>
