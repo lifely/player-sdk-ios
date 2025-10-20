@@ -13,7 +13,7 @@ let package = Package(
       targets: ["DailymotionPlayerSDKAgregate"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", .exact("3.26.1"))
+    .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", "3.26.1"..<"4.0.0")
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
