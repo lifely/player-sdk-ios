@@ -16877,21 +16877,21 @@
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4144,
+      "offset": 4208,
       "length": 29,
       "value": "\"https:\/\/geo.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4196,
+      "offset": 4260,
       "length": 38,
       "value": "\"https:\/\/geo-stage-01.dailymotion.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/dailymotion-player-ios-sdk\/dailymotion-player-ios-sdk\/main\/DailymotionPlayerSDK\/Sources\/Public\/DMPlayerParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4257,
+      "offset": 4321,
       "length": 37,
       "value": "\"https:\/\/geo-preprod.dailymotion.com\""
     },

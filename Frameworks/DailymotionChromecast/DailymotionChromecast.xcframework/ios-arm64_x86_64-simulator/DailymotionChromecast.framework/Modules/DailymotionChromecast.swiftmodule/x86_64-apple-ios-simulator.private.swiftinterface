@@ -41,6 +41,9 @@ open class DMChromecast {
   public func setup()
   @objc deinit
 }
+extension DailymotionChromecast.DMChromecast {
+  public static func destroyChromecastSession()
+}
 public struct Playable : Swift.Codable, Swift.Equatable {
   public static func == (lhs: DailymotionChromecast.Playable, rhs: DailymotionChromecast.Playable) -> Swift.Bool
   public var chromecastUrl: Swift.String {

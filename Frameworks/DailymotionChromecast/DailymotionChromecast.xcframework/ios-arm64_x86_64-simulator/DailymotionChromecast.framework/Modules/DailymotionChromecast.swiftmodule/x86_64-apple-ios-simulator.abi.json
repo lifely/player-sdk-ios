@@ -996,6 +996,29 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroyChromecastSession",
+            "printedName": "destroyChromecastSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DailymotionChromecast12DMChromecastC07destroyB7SessionyyFZ",
+            "mangledName": "$s21DailymotionChromecast12DMChromecastC07destroyB7SessionyyFZ",
+            "moduleName": "DailymotionChromecast",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",

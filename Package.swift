@@ -15,7 +15,7 @@ let package = Package(
                 "GoogleCast",
                 "DailymotionAdvertisingServices" ,
                 "GoogleInteractiveMediaAds",
-                "OMSDK_Dailymotion3"]),
+                "OMSDK_Dailymotion"]),
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -41,8 +41,8 @@ let package = Package(
       path: "Frameworks/AdvertisingFramework/GoogleInteractiveMediaAds.xcframework"
     ),
     .binaryTarget(
-      name: "OMSDK_Dailymotion3",
-      path: "Frameworks/AdvertisingFramework/OMSDK_Dailymotion3.xcframework"
+      name: "OMSDK_Dailymotion",
+      path: "Frameworks/AdvertisingFramework/OMSDK_Dailymotion.xcframework"
     )
   ]
 )
