@@ -6,7 +6,7 @@
 
 
 ## Full SDK Documentation
- [https://developers.dailymotion.com/sdk/player-sdk/ios](https://developers.dailymotion.com/sdk/player-sdk/ios)
+ [https://developers.dailymotion.com/sdk/player-sdk/ios](https://developers.dailymotion.com/reference/ios-sdk-player-methods)
 
  <br>
 
