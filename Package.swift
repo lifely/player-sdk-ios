@@ -5,14 +5,20 @@ import PackageDescription
 
 let package = Package(
   name: "DailymotionPlayerSDK",
-  platforms: [.iOS(.v13)],
+  platforms: [.iOS(.v15)],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
       name: "DailymotionPlayerSDK",
-      targets: ["DailymotionPlayerSDKAgregate"]),
+      targets: ["DailymotionPlayerSDKAgregate"]
+    ),
+    .library(
+      name: "DailymotionPlayerCastLessSDK",
+      targets: ["DailymotionPlayerCastLessSDKAgregate"]
+    ),
   ],
   dependencies: [
+    .package(url: "https://github.com/SRGSSR/google-cast-sdk.git", "4.8.3" ..< "4.9.0"),
     .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", "3.26.1"..<"4.0.0")
   ],
   targets: [
@@ -27,10 +33,6 @@ let package = Package(
       path: "Frameworks/DailymotionChromecast/DailymotionChromecast.xcframework"
     ),
     .binaryTarget(
-      name: "GoogleCast",
-      path: "Frameworks/DailymotionChromecast/GoogleCast.xcframework"
-    ),
-    .binaryTarget(
       name: "DailymotionPlayerSDK",
       path: "Frameworks/DailymotionPlayer/DailymotionPlayerSDK.xcframework"
     ),
@@ -41,14 +43,24 @@ let package = Package(
     .target(
       name: "DailymotionPlayerSDKAgregate",
       dependencies: [
-        .target(name: "GoogleCast"),
         .target(name: "OMSDK_Dailymotion"),
         .target(name: "DailymotionPlayerSDK"),
         .target(name: "DailymotionChromecast"),
         .target(name: "DailymotionAdvertisingServices"),
+        .product(name: "GoogleCast", package: "google-cast-sdk"),
         .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios")
       ],
       path: "DailymotionPlayerSDKAgregate"
+    ),
+    .target(
+      name: "DailymotionPlayerCastLessSDKAgregate",
+      dependencies: [
+        .target(name: "OMSDK_Dailymotion"),
+        .target(name: "DailymotionPlayerSDK"),
+        .target(name: "DailymotionAdvertisingServices"),
+        .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios")
+      ],
+      path: "DailymotionPlayerCastSDKAgregate"
     )
   ]
 )
